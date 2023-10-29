@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/*Asterisk wildcard selector used to overide default browser added styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------- Global style */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    color: #313131;
+    width: 100%;
+
+}
+
+/* --------- Heading */
+.heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.logo {
+    height: 30px;
+    padding-right: 5px;
+}
+
+.quiz-area {
+    text-align: center;
+}
+
+.paragragh {
+    margin: 10px 0;
+}
+
+.cover {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 5px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.scores-area {
+    bottom: 0;
+    text-align: center;
+}
+
+.scores {
+    display: inline-block;
+
+}
+
+#correct {
+    color: green;
+}
+
+#incorrect {
+    color: red;
+}
