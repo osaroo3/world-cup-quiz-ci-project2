@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="Enter your description here" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/yoga.png"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Title-->
     <title>Title</title>
   </head>
   <body>
     <section id="main-section">
-      <h1 class="heading" src="assets/images/logo.png">2022 World Cup Quiz</h1>
+      <!--Heading-->
+      <h1 class="heading">
+        <img class="logo" src="assets/images/fifa-trophy.webp" />
+        2022 World Cup Quiz
+      </h1>
 
       <div class="user-name">
         <form
@@ -23,7 +34,7 @@
           <button type="submit">Start Quiz</button>
         </form>
       </div>
-
+      <!--Quiz area-->
       <div class="quiz-area">
         <div class="question">
           <h3>Question 1</h3>
@@ -158,11 +169,12 @@
           <label for="radio10">Turkey</label>
         </div>
       </div>
-
+      <!--Scores area-->
       <div class="scores-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
       </div>
+      <!--Comment after submission-->
       <div class="Comment-div"></div>
     </section>
   </body>
