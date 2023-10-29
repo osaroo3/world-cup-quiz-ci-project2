@@ -25,18 +25,21 @@
 
       <!--Quiz area-->
       <div class="quiz-area">
-        <div class="user-name">
+        <div class="welcome">
           <p class="set">Welcome to our 2022 world cup quiz</p>
           <p class="set">You have 120s to answer 10 questions</p>
           <p class="set">Thank you!</p>
           <form
+            name="myForm"
             id="enter-quiz"
             method="POST"
             action="https://formdump.codeinstitute.net"
           >
-            <label for="user_name">Enter your username:</label>
+            <label id="resize" for="user_name">Enter your username:</label>
             <input type="text" id="user_name" name="user_name" required /><br />
-            <button type="submit">Start Quiz</button>
+            <button id="start-quiz" data-type="start" type="submit">
+              Start Quiz
+            </button>
           </form>
         </div>
         <div class="question">
@@ -259,14 +262,21 @@
             <label class="radiocontainer" for="radio10">Turkey</label>
           </div>
         </div>
+
+        <!--Comment after submission-->
+        <div class="Comment-div"></div>
+        <div class="button-div">
+          <button data-type="next" id="next-question">Next></button><br />
+          <button data-type="submit" id="submit">Submit</button>
+        </div>
       </div>
+
       <!--Scores area-->
       <div class="scores-area">
         <p class="scores">Correct Answers <span id="correct">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
       </div>
-      <!--Comment after submission-->
-      <div class="Comment-div"></div>
     </section>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
