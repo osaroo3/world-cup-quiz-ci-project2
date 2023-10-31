@@ -79,7 +79,7 @@ button[type=submit] {
     display: none;
 }
 
-#next-question {
+#next-question-button {
     display: none;
     left: 0;
     background-color: green;
@@ -95,7 +95,7 @@ button[type=submit] {
 }
 
 .scores-area {
-    display: none;
+
     bottom: 0;
     text-align: center;
 }
@@ -111,4 +111,9 @@ button[type=submit] {
 
 #incorrect {
     color: red;
+}
+
+#counter {
+    color: blue;
+    padding: 0 5px;
 }

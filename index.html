@@ -42,7 +42,8 @@
             </button>
           </form>
         </div>
-        <div class="question">
+
+        <div class="question" id="question-one">
           <h3>Question 1</h3>
           <p class="paragragh">
             Who won the FIFA 2022 world cup hosted in Qatar?
@@ -65,7 +66,7 @@
           </div>
         </div>
 
-        <div class="question">
+        <div class="question" id="question-two">
           <h3>Question 2</h3>
           <p class="paragragh">Who scored the first goal of the world cup?</p>
           <div class="cover">
@@ -86,7 +87,7 @@
           </div>
         </div>
 
-        <div class="question">
+        <div class="question" id="question-three">
           <h3>Question 3</h3>
           <p class="paragragh">Who won the player of the tournament?</p>
           <div class="cover">
@@ -266,7 +267,8 @@
         <!--Comment after submission-->
         <div class="Comment-div"></div>
         <div class="button-div">
-          <button data-type="next" id="next-question">Next></button><br />
+          <button data-type="next" id="next-question-button">Next></button
+          ><br />
           <button data-type="submit" id="submit">Submit</button>
         </div>
       </div>
@@ -275,6 +277,7 @@
       <div class="scores-area">
         <p class="scores">Correct Answers <span id="correct">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <p class="scores">count<span id="counter">0</span></p>
       </div>
     </section>
     <script src="assets/js/script.js"></script>

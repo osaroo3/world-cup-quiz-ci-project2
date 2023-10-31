@@ -1,6 +1,6 @@
 // Run the quiz after the DOM has finished loading
 // Get the button elements and add event listeners to them
-console.log("yes");
+
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("enter-quiz").addEventListener("click", function (event) {
         event.preventDefault();
@@ -8,22 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let buttons = document.getElementsByTagName("button");
     let EnterQuiz = document.getElementById("user_name");
-
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (EnterQuiz.value === "") {
                 alert("Please enter your user name");
             } else {
                 runQuiz();
-            }
-
-            if (this.getAttribute("data-type") === "next") {
-                nextQuestion();
-            } else if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                let gameType = this.getAttribute("data-type");
-                runGame(gameType);
             }
         });
     };
@@ -35,21 +25,48 @@ document.addEventListener("DOMContentLoaded", function () {
     /* document.getElementById("submit").addEventListener("keydown", function (event) {
          if (event.key === "Enter") {
              checkAnswer();
-         }
-    runGame("addition");
-    
-    });*/
-
-
+         }*/
+    //runQuiz("start");
 });
 
 function runQuiz() {
-    let welcome = document.getElementsByClassName("welcome")[0];
-    welcome.style.display = "none";
-    let qOne = document.getElementsByClassName("question")[0];
-    qOne.style.display = "inline-block";
-    let nextQuestion = document.getElementById("next-question");
-    nextQuestion.style.display = "inline-block";
+    hideWelcomeDiv();
+
+    let questions = document.getElementsByClassName("question");
+    for (let question of questions) {
+        question.style.display = "inline-block";
+    }
+    /*
     let mainSection = document.getElementById("main-section");
     mainSection.style.background = "none";
+
+    let nextButton = document.getElementById("next-question-button");
+    nextButton.style.display = "inline-block";
+
+    numCounter();
+    let numCount = document.getElementById("counter");
+    if (numCount === "2") {
+        hideDivs();
+        //questionTwo();
+    } else {
+        checkAnswer();
+    }
+*/
+}
+
+function hideWelcomeDiv() {
+    let welcome = document.getElementsByClassName("welcome")[0];
+    welcome.style.display = "none";
+}
+
+function hideQuestionDivs() {
+    let questions = document.getElementsByClassName("question");
+    for (let q of questions) {
+        q.style.display = "none";
+    }
+}
+
+function numCounter() {
+    let oldScore = parseInt(document.getElementById("counter").innerText);
+    document.getElementById("counter").innerText = ++oldScore;
 }
