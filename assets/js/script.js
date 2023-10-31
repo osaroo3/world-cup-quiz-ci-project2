@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function runQuiz() {
     hideWelcomeDiv();
 
+    let submitButton = document.getElementById("submit");
+    submitButton.style.display = "inline-block";
+
     let questions = document.getElementsByClassName("question");
     for (let question of questions) {
         question.style.display = "inline-block";
