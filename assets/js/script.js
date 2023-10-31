@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
          }*/
     //runQuiz("start");
 });
-
+// This fuction takes the user to the quiz environment
 function runQuiz() {
     hideWelcomeDiv();
 
