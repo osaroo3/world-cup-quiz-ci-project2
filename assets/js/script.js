@@ -38,22 +38,14 @@ function runQuiz() {
     for (let question of questions) {
         question.style.display = "inline-block";
     }
-    /*
+    // Remove background image when quiz is run
     let mainSection = document.getElementById("main-section");
     mainSection.style.background = "none";
 
     let nextButton = document.getElementById("next-question-button");
     nextButton.style.display = "inline-block";
 
-    numCounter();
-    let numCount = document.getElementById("counter");
-    if (numCount === "2") {
-        hideDivs();
-        //questionTwo();
-    } else {
-        checkAnswer();
-    }
-*/
+
 }
 
 function hideWelcomeDiv() {
@@ -67,8 +59,9 @@ function hideQuestionDivs() {
         q.style.display = "none";
     }
 }
-
+/*
 function numCounter() {
     let oldScore = parseInt(document.getElementById("counter").innerText);
     document.getElementById("counter").innerText = ++oldScore;
 }
+*/

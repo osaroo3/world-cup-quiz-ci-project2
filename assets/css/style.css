@@ -24,6 +24,7 @@
 .heading {
     text-align: center;
     font-size: 3rem;
+    margin-top: 20px;
 }
 
 .logo {
@@ -79,7 +80,7 @@ button[type=submit] {
     display: none;
 }
 
-#next-question-button {
+#submit {
     display: none;
     left: 0;
     background-color: green;
@@ -90,12 +91,8 @@ button[type=submit] {
 
 }
 
-#submit {
-    display: none;
-}
-
 .scores-area {
-
+    display: none;
     bottom: 0;
     text-align: center;
 }
