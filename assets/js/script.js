@@ -2,6 +2,7 @@
 // Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function () {
+    //Prevent default form submission
     document.getElementById("enter-quiz").addEventListener("click", function (event) {
         event.preventDefault();
     });
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
     let EnterQuiz = document.getElementById("user_name");
     for (let button of buttons) {
+        //Prevent user from accessing the quiz if username is not provided
         button.addEventListener("click", function () {
             if (EnterQuiz.value === "") {
                 alert("Please enter your user name");
