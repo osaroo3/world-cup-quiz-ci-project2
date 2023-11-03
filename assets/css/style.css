@@ -44,6 +44,10 @@
     padding: 1%;
 }
 
+.correct-check {
+    display: none;
+}
+
 .set {
     margin: 10px 0;
 }

@@ -14,21 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (EnterQuiz.value === "") {
                 alert("Please enter your user name");
+            } else if (this.getAttribute("data-type") === "submit") {
+                checkAnswer();
             } else {
                 runQuiz();
             }
         });
     };
-    /*document.getElementById("start-quiz").addEventListener("keydown", function (event) {
-     if (event.key === "Enter") {
-         checkAnswer();
-     }
- });*/
-    /* document.getElementById("submit").addEventListener("keydown", function (event) {
+    /* document.getElementById("start-quiz").addEventListener("keydown", function (event) {
          if (event.key === "Enter") {
              checkAnswer();
-         }*/
-    //runQuiz("start");
+         }
+     });
+     document.getElementById("submit").addEventListener("keydown", function (event) {
+         if (event.key === "Enter") {
+             checkAnswer();
+         }
+ 
+     });*/
+
 });
 // This fuction takes the user to the quiz environment
 function runQuiz() {
@@ -43,12 +47,17 @@ function runQuiz() {
     }
     // Remove background image when quiz is run
     let mainSection = document.getElementById("main-section");
-    mainSection.style.background = "none";
+    mainSection.style.background = "inline-bock";
 
-    let nextButton = document.getElementById("next-question-button");
-    nextButton.style.display = "inline-block";
-
-
+};
+function checkAnswer() {
+    let radioContainerOne = document.getElementsByClassName("radio-container")[0];
+    radioContainerOne.addEventListener("click", function () {
+        let correctCheckOne = document.getElementById("correct-answer-one");
+        if (correctCheckOne.value) {
+            correctCheckOne.style.display = "inline-block";
+        }
+    });
 }
 
 function hideWelcomeDiv() {
@@ -61,7 +70,13 @@ function hideQuestionDivs() {
     for (let q of questions) {
         q.style.display = "none";
     }
-}
+};
+//function displayCheck() {
+     //   let correctCheckOne = document.getElementById("correct-answer-one");
+      //  correctCheckOne.style.display = "none";
+    //}
+
+
 /*
 function numCounter() {
     let oldScore = parseInt(document.getElementById("counter").innerText);

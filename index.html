@@ -50,7 +50,10 @@
           </p>
           <div class="cover">
             <input type="radio" id="radio" name="radio" />
-            <label class="radiocontainer" for="radio">Argentina</label>
+            <label class="radio-container" for="radio"
+              >Argentina<span id="correct-answer-one" class="correct-check"
+                ><i class="fa-solid fa-circle-check"></i></span
+            ></label>
           </div>
           <div class="cover">
             <input type="radio" id="radio" name="radio" />
@@ -267,7 +270,7 @@
         <!--Comment after submission-->
         <div class="Comment-div"></div>
         <div class="button-div">
-          <button data-type="submit" id="submit">Submit</button>
+          <button data-type="check-answer" id="submit">Submit</button>
           <!--Scores area-->
           <div class="scores-area">
             <p class="scores">Correct Answers <span id="correct">0</span></p>
@@ -278,6 +281,10 @@
         </div>
       </div>
     </section>
+    <script
+      src="https://kit.fontawesome.com/c56fba05b1.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
