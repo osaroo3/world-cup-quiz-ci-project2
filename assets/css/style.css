@@ -11,7 +11,7 @@
 body {
     background: url("../images/2022_FIFA_World_Cup.svg.png") no-repeat center center/cover;
     min-height: 100vh;
-    display: flex;
+    display: block;
     flex-direction: column;
     background-color: white;
     font-family: "Open Sans", sans-serif;
@@ -50,10 +50,6 @@ body {
 
 .set {
     margin: 10px 0;
-}
-
-input[type=radio] {
-    display: none;
 }
 
 input[type=text] {
