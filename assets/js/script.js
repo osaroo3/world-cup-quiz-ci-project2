@@ -49,8 +49,6 @@ function runQuiz() {
     let mainSection = document.getElementById("main-section");
     mainSection.style.background = "inline-bock";
 
-};
-function checkAnswer() {
     let radioContainerOne = document.getElementsByClassName("radio-container")[0];
     radioContainerOne.addEventListener("click", function () {
 
@@ -59,6 +57,12 @@ function checkAnswer() {
             correctCheckOne.style.display = "inline-block";
         }
     });
+    console.log(radioContainerOne.innerHTML);
+    console.log("yes");
+
+};
+function checkAnswer() {
+
 };
 function hideWelcomeDiv() {
     let welcome = document.getElementsByClassName("welcome")[0];
