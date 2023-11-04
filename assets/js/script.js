@@ -49,8 +49,8 @@ function runQuiz() {
         question.style.display = "inline-block";
     }
     // Remove background image when quiz is run
-    let logoo = document.getElementsByClassName("logo")[0];
-    logoo.style.display = "none";
+    let bodi = document.getElementsByTagName("body")[0];
+    bodi.style.background = "none";
 
     //code to display quiz 
     let mainSection = document.getElementById("main-section");
@@ -190,7 +190,7 @@ function runQuiz() {
     radioButtonTwentyNine.addEventListener("click", function () {
         let radioContainerTwentyNine = document.getElementsByClassName("radio-container")[28];
         if (radioContainerTwentyNine.innerText === "Kylian Mbappe") {
-            let correctCheckEight = document.getElementById("correct-answer-Eight");
+            let correctCheckEight = document.getElementById("correct-answer-eight");
             correctCheckEight.style.display = "inline-block";
             coverThirty.style.display = "none";
             coverThirtyOne.style.display = "none";
