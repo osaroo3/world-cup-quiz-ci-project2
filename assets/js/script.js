@@ -53,13 +53,13 @@ function runQuiz() {
 function checkAnswer() {
     let radioContainerOne = document.getElementsByClassName("radio-container")[0];
     radioContainerOne.addEventListener("click", function () {
-        let correctCheckOne = document.getElementById("correct-answer-one");
-        if (correctCheckOne.value) {
+
+        if (radioContainerOne.innerText === "Argentina") {
+            let correctCheckOne = document.getElementById("correct-answer-one");
             correctCheckOne.style.display = "inline-block";
         }
     });
-}
-
+};
 function hideWelcomeDiv() {
     let welcome = document.getElementsByClassName("welcome")[0];
     welcome.style.display = "none";
@@ -71,13 +71,14 @@ function hideQuestionDivs() {
         q.style.display = "none";
     }
 };
+/*
 //function displayCheck() {
      //   let correctCheckOne = document.getElementById("correct-answer-one");
       //  correctCheckOne.style.display = "none";
     //}
 
 
-/*
+
 function numCounter() {
     let oldScore = parseInt(document.getElementById("counter").innerText);
     document.getElementById("counter").innerText = ++oldScore;
