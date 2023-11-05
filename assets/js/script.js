@@ -38,8 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
 function runQuiz() {
     hideWelcomeDiv();
 
+    // Make submit button visible
     let submitButton = document.getElementById("submit");
     submitButton.style.display = "inline-block";
+
+    // Make scores-area visible
+    let scoresArea = document.getElementsByClassName("scores-area")[0];
+    scoresArea.style.display = "inline-block";
 
     //code to display quiz 
     let questions = document.getElementsByClassName("question");
@@ -609,13 +614,23 @@ function hideQuestionDivs() {
         q.style.display = "none";
     }
 };
-/*
-//function displayCheck() {
-     //   let correctCheckOne = document.getElementById("correct-answer-one");
-      //  correctCheckOne.style.display = "none";
-    //}
-function numCounter() {
-    let oldScore = parseInt(document.getElementById("counter").innerText);
-    document.getElementById("counter").innerText = ++oldScore;
+/**
+ * Retrieves the DOM current score of correct  and incremase it by 1
+ *  and increase it by 1
+ */
+function incrementCorrectScore() {
+
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+
 }
-*/
+
+/**
+ * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ */
+function incrementWrongAnswer() {
+
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
+
+}
