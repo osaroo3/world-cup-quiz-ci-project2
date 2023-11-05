@@ -127,10 +127,22 @@ button[type=submit] {
     }
 }
 
-/*Media query: phones (768px and up)*/
+/*Media query:Large and lanscape phone(576px and up)*/
+@media screen and (min-width:576px) {
+    body {
+        background-size: 400px 360px;
+        width: 100%;
+    }
+}
+
+/*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
     body {
-        background-size: 600px 450px;
+        background-size: 600px 650px;
         width: 100%;
+    }
+
+    .heading {
+        margin-top: 50px;
     }
 }
