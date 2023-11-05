@@ -70,6 +70,7 @@ function runQuiz() {
             coverTwo.style.display = "none";
             coverThree.style.display = "none";
             coverFour.style.display = "none";
+            incrementCorrectScore();
         };
     });
     // Q1 incorrect answers
@@ -124,6 +125,7 @@ function runQuiz() {
             coverFive.style.display = "none";
             coverSeven.style.display = "none";
             coverEight.style.display = "none";
+            incrementCorrectScore();
         };
     });
 
@@ -179,6 +181,7 @@ function runQuiz() {
             coverNine.style.display = "none";
             coverTen.style.display = "none";
             coverTwelve.style.display = "none";
+            incrementCorrectScore();
         };
     });
     // Q3 incorrect answers
@@ -233,6 +236,7 @@ function runQuiz() {
             coverThirteen.style.display = "none";
             coverFourteen.style.display = "none";
             coverFifteen.style.display = "none";
+            incrementCorrectScore();
         };
     });
     // Q4 incorrect answers
@@ -272,7 +276,7 @@ function runQuiz() {
         };
     });
 
-    // Q5 code to tick correct or incorrect answers when clicked by user and hide all not cliked
+    // Q5 code to tick correct or incorrect answers when clicked by user and hide all not clicked
     let coverSeventeen = document.getElementsByClassName("cover")[16];
     let coverEighteen = document.getElementsByClassName("cover")[17];
     let coverNineteen = document.getElementsByClassName("cover")[18];
@@ -287,6 +291,7 @@ function runQuiz() {
             coverSeventeen.style.display = "none";
             coverEighteen.style.display = "none";
             coverTwenty.style.display = "none";
+            incrementCorrectScore();
         };
     });
 
@@ -328,7 +333,7 @@ function runQuiz() {
         };
     });
 
-    // Q6 code to tick correct or incorrect answers when clicked by user and hide all not cliked
+    // Q6 code to tick correct or incorrect answers when clicked by user and hide all not clicked
     let coverTwentyOne = document.getElementsByClassName("cover")[20];
     let coverTwentyTwo = document.getElementsByClassName("cover")[21];
     let coverTwentythree = document.getElementsByClassName("cover")[22];
@@ -343,6 +348,7 @@ function runQuiz() {
             coverTwentyTwo.style.display = "none";
             coverTwentythree.style.display = "none";
             coverTwentyFour.style.display = "none";
+            incrementCorrectScore();
         };
     });
     //Q6 incorrect answers
@@ -382,7 +388,7 @@ function runQuiz() {
         };
     });
 
-    // Q7 code to tick correct or incorrect answers when clicked by user and hide all not cliked
+    // Q7 code to tick correct or incorrect answers when clicked by user and hide all not clicked
     let coverTwentyFive = document.getElementsByClassName("cover")[24];
     let coverTwentySix = document.getElementsByClassName("cover")[25];
     let coverTwentySeven = document.getElementsByClassName("cover")[26];
@@ -397,6 +403,7 @@ function runQuiz() {
             coverTwentySix.style.display = "none";
             coverTwentySeven.style.display = "none";
             coverTwentyEight.style.display = "none";
+            incrementCorrectScore();
         };
     });
 
@@ -438,7 +445,7 @@ function runQuiz() {
         };
     });
 
-    // Q8 code to tick correct or incorrect answers when clicked by user and hide all not cliked
+    // Q8 code to tick correct or incorrect answers when clicked by user and hide all not clicked
     let coverTwentyNine = document.getElementsByClassName("cover")[28];
     let coverThirty = document.getElementsByClassName("cover")[29];
     let coverThirtyOne = document.getElementsByClassName("cover")[30];
@@ -453,6 +460,7 @@ function runQuiz() {
             coverThirty.style.display = "none";
             coverThirtyOne.style.display = "none";
             coverThirtyTwo.style.display = "none";
+            incrementCorrectScore();
         };
     });
 
@@ -506,6 +514,7 @@ function runQuiz() {
             coverThirtyThree.style.display = "none";
             coverThirtyFour.style.display = "none";
             coverThirtySix.style.display = "none";
+            incrementCorrectScore();
         };
     });
 
@@ -560,6 +569,7 @@ function runQuiz() {
             coverThirtyEight.style.display = "none";
             coverThirtyNine.style.display = "none";
             coverForty.style.display = "none";
+            incrementCorrectScore();
         };
     });
     // Q10 incorrect answers
@@ -619,18 +629,14 @@ function hideQuestionDivs() {
  *  and increase it by 1
  */
 function incrementCorrectScore() {
-
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-
+    let previousScore = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++previousScore;
 }
 
 /**
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
  */
 function incrementWrongAnswer() {
-
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
-
+    let previousScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++previousScore;
 }
