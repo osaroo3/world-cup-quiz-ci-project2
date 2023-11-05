@@ -10,6 +10,7 @@
 /* --------- Global style */
 body {
     background: url("../images/2022_FIFA_World_Cup.svg.png") no-repeat center center/cover;
+    background-size: 900px 700px;
     min-height: 100vh;
     display: block;
     flex-direction: column;
@@ -17,14 +18,13 @@ body {
     font-family: "Open Sans", sans-serif;
     color: black;
     width: 100%;
-
 }
 
 /* --------- Heading */
 .heading {
     text-align: center;
     font-size: 3rem;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .logo {
@@ -32,6 +32,7 @@ body {
     padding-right: 5px;
 }
 
+/* Quiz area*/
 .quiz-area {
     text-align: center;
     box-sizing: border-box;
@@ -92,7 +93,7 @@ button[type=submit] {
     display: none;
 
     background-color: green;
-    color: black;
+    color: white;
     font-size: 20px;
     text-align: left;
     margin-top: 15px;
@@ -116,9 +117,4 @@ button[type=submit] {
 
 #incorrect {
     color: red;
-}
-
-#counter {
-    color: blue;
-    padding: 0 5px;
 }
