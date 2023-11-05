@@ -1,6 +1,5 @@
 // Run the quiz after the DOM has finished loading
 // Get the button elements and add event listeners to them
-
 document.addEventListener("DOMContentLoaded", function () {
     //Prevent default form submission
     document.getElementById("enter-quiz").addEventListener("click", function (event) {
@@ -13,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
         //Prevent user from accessing the quiz if username is not provided
         button.addEventListener("click", function () {
             if (EnterQuiz.value === "") {
-                alert("Please enter your user name");
+                alert("Please enter your username");
             } else if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
+                resultStatement();
             } else {
                 runQuiz();
             }
@@ -638,10 +637,7 @@ function runQuiz() {
         };
     });
 };
-function checkAnswer() {
-    alert("congratulations");
 
-};
 function hideWelcomeDiv() {
     let welcome = document.getElementsByClassName("welcome")[0];
     welcome.style.display = "none";
@@ -669,3 +665,9 @@ function incrementWrongScore() {
     let previousScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++previousScore;
 }
+
+function resultStatement() {
+    let userScore = parseInt(document.getElementById("correct").innerText);
+    alert(`Your score is ${userScore} /10`);
+}
+
