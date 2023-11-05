@@ -90,7 +90,7 @@ button[type=submit] {
 
 #submit {
     display: none;
-    left: 0;
+    bottom: 0;
     background-color: green;
     color: black;
     font-size: 20px;
