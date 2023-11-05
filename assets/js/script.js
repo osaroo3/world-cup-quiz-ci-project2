@@ -83,6 +83,7 @@ function runQuiz() {
             coverOne.style.display = "none";
             coverThree.style.display = "none";
             coverFour.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -95,6 +96,7 @@ function runQuiz() {
             coverOne.style.display = "none";
             coverTwo.style.display = "none";
             coverFour.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -107,6 +109,7 @@ function runQuiz() {
             coverOne.style.display = "none";
             coverTwo.style.display = "none";
             coverThree.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -139,6 +142,7 @@ function runQuiz() {
             coverSix.style.display = "none";
             coverSeven.style.display = "none";
             coverEight.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -151,6 +155,7 @@ function runQuiz() {
             coverFive.style.display = "none";
             coverSix.style.display = "none";
             coverEight.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -163,6 +168,7 @@ function runQuiz() {
             coverFive.style.display = "none";
             coverSix.style.display = "none";
             coverSeven.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -194,6 +200,7 @@ function runQuiz() {
             coverTen.style.display = "none";
             coverEleven.style.display = "none";
             coverTwelve.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -206,6 +213,7 @@ function runQuiz() {
             coverNine.style.display = "none";
             coverEleven.style.display = "none";
             coverTwelve.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -218,6 +226,7 @@ function runQuiz() {
             coverNine.style.display = "none";
             coverTen.style.display = "none";
             coverEleven.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -249,6 +258,7 @@ function runQuiz() {
             coverFourteen.style.display = "none";
             coverFifteen.style.display = "none";
             coverSixteen.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -261,6 +271,7 @@ function runQuiz() {
             coverThirteen.style.display = "none";
             coverFifteen.style.display = "none";
             coverSixteen.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -273,6 +284,7 @@ function runQuiz() {
             coverThirteen.style.display = "none";
             coverFourteen.style.display = "none";
             coverSixteen.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -305,6 +317,7 @@ function runQuiz() {
             coverEighteen.style.display = "none";
             coverNineteen.style.display = "none";
             coverTwenty.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -317,6 +330,7 @@ function runQuiz() {
             coverSeventeen.style.display = "none";
             coverNineteen.style.display = "none";
             coverTwenty.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -329,7 +343,7 @@ function runQuiz() {
             coverSeventeen.style.display = "none";
             coverEighteen.style.display = "none";
             coverNineteen.style.display = "none";
-
+            incrementWrongScore();
         };
     });
 
@@ -361,6 +375,7 @@ function runQuiz() {
             coverTwentyOne.style.display = "none";
             coverTwentythree.style.display = "none";
             coverTwentyFour.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -373,6 +388,7 @@ function runQuiz() {
             coverTwentyOne.style.display = "none";
             coverTwentyTwo.style.display = "none";
             coverTwentyFour.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -385,6 +401,7 @@ function runQuiz() {
             coverTwentyOne.style.display = "none";
             coverTwentyTwo.style.display = "none";
             coverTwentythree.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -418,6 +435,7 @@ function runQuiz() {
             coverTwentyFive.style.display = "none";
             coverTwentySeven.style.display = "none";
             coverTwentyEight.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -430,6 +448,7 @@ function runQuiz() {
             coverTwentyFive.style.display = "none";
             coverTwentySix.style.display = "none";
             coverTwentyEight.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -442,6 +461,7 @@ function runQuiz() {
             coverTwentyFive.style.display = "none";
             coverTwentySix.style.display = "none";
             coverTwentySeven.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -474,6 +494,7 @@ function runQuiz() {
             coverTwentyNine.style.display = "none";
             coverThirtyOne.style.display = "none";
             coverThirtyTwo.style.display = "none";
+            incrementWrongScore();
         };
     });
     let wrongButtonTwentyThree = document.getElementsByClassName("radio-button")[30];
@@ -485,6 +506,7 @@ function runQuiz() {
             coverTwentyNine.style.display = "none";
             coverThirty.style.display = "none";
             coverThirtyTwo.style.display = "none";
+            incrementWrongScore();
         };
     });
     let wrongButtonTwentyFour = document.getElementsByClassName("radio-button")[31];
@@ -496,6 +518,7 @@ function runQuiz() {
             coverTwentyNine.style.display = "none";
             coverThirty.style.display = "none";
             coverThirtyOne.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -528,6 +551,7 @@ function runQuiz() {
             coverThirtyFour.style.display = "none";
             coverThirtyFive.style.display = "none";
             coverThirtySix.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -540,6 +564,7 @@ function runQuiz() {
             coverThirtyThree.style.display = "none";
             coverThirtyFive.style.display = "none";
             coverThirtySix.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -552,6 +577,7 @@ function runQuiz() {
             coverThirtyThree.style.display = "none";
             coverThirtyFour.style.display = "none";
             coverThirtyFive.style.display = "none";
+            incrementWrongScore();
         };
     });
     // Q10 code to tick correct or incorrect answers when clicked by user and hide all not cliked
@@ -582,6 +608,7 @@ function runQuiz() {
             coverThirtySeven.style.display = "none";
             coverThirtyNine.style.display = "none";
             coverForty.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -594,6 +621,7 @@ function runQuiz() {
             coverThirtySeven.style.display = "none";
             coverThirtyEight.style.display = "none";
             coverForty.style.display = "none";
+            incrementWrongScore();
         };
     });
 
@@ -606,6 +634,7 @@ function runQuiz() {
             coverThirtySeven.style.display = "none";
             coverThirtyEight.style.display = "none";
             coverThirtyNine.style.display = "none";
+            incrementWrongScore();
         };
     });
 };
@@ -636,7 +665,7 @@ function incrementCorrectScore() {
 /**
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
  */
-function incrementWrongAnswer() {
+function incrementWrongScore() {
     let previousScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++previousScore;
 }
