@@ -44,6 +44,7 @@ function runQuiz() {
     let submitButton = document.getElementById("submit");
     submitButton.style.display = "inline-block";
 
+    //code to display quiz 
     let questions = document.getElementsByClassName("question");
     for (let question of questions) {
         question.style.display = "inline-block";
@@ -51,10 +52,6 @@ function runQuiz() {
     // Remove background image when quiz is run
     let bodi = document.getElementsByTagName("body")[0];
     bodi.style.background = "none";
-
-    //code to display quiz 
-    let mainSection = document.getElementById("main-section");
-    mainSection.style.background = "inline-bock";
 
     // Q1 code to tick correct or incorrect answers when clicked by user and hide all not cliked
     let coverOne = document.getElementsByClassName("cover")[0];

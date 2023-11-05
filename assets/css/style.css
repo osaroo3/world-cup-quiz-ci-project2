@@ -48,6 +48,10 @@ body {
     display: none;
 }
 
+.incorrect-check {
+    display: none;
+}
+
 .set {
     margin: 10px 0;
 }
