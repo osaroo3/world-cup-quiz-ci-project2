@@ -12,19 +12,20 @@ body {
     background: url("../images/2022_FIFA_World_Cup.svg.png") no-repeat center center/cover;
     background-size: 900px 700px;
     min-height: 100vh;
-    display: block;
+    display: flex;
     flex-direction: column;
     background-color: white;
     font-family: "Open Sans", sans-serif;
     color: black;
     width: 100%;
+    flex: 1 0 auto;
 }
 
 /* --------- Heading */
 .heading {
     text-align: center;
     font-size: 3rem;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .logo {
@@ -55,11 +56,13 @@ body {
 
 .set {
     margin: 10px 0;
+    font-size: 20px;
 }
 
 input[type=text] {
     margin-top: 30px;
     font-size: 20px;
+    width: 40%;
 }
 
 #resize {
@@ -91,13 +94,12 @@ button[type=submit] {
 
 #submit {
     display: none;
-
     background-color: green;
     color: white;
     font-size: 20px;
     text-align: left;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .scores-area {
@@ -121,10 +123,13 @@ button[type=submit] {
 
 /*Feedback styling*/
 .feedback-div {
-    display: none;
     margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#quiz-review {
+    font-size: 20px;
 }
 
 .submit-feedback>a {
@@ -133,14 +138,24 @@ button[type=submit] {
     border: 1px solid black;
     border-radius: 5px;
     background-color: black;
+    font-size: 25px;
+}
+
+#feedback-info {
+    font-size: 20px;
 }
 
 /*Media query: phones (280px and up)*/
 @media screen and (min-width:280px) {
     body {
         background-size: 200px 450px;
-        width: fit-content;
+        width: 100%;
     }
+
+    input[type=text] {
+        width: 80%;
+    }
+
 }
 
 /*Media query:Large and lanscape phone(576px and up)*/
@@ -149,18 +164,21 @@ button[type=submit] {
         background-size: 400px 360px;
         width: 100%;
     }
-}
 
-/*Media query: tablets and larger (768px and up)*/
-@media screen and (min-width:768px) {
-    body {
-        background-size: 600px 650px;
-        width: 100%;
-        display: flex;
-
+    input[type=text] {
+        width: 300px;
     }
 
-    .heading {
-        margin-top: 50px;
+    /*Media query: tablets and larger (768px and up)*/
+    @media screen and (min-width:768px) {
+        body {
+            background-size: 600px 650px;
+            width: 100%;
+            display: flex;
+
+        }
+
+        .heading {
+            margin-top: 50px;
+        }
     }
-}

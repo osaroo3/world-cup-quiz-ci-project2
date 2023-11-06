@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     let buttons = document.getElementsByTagName("button");
-    let EnterQuiz = document.getElementById("user_name");
+    let EnterQuiz = document.getElementById("user-name");
     for (let button of buttons) {
         //Prevent user from accessing the quiz if username is not provided
         button.addEventListener("click", function () {
@@ -636,6 +636,7 @@ function runQuiz() {
             incrementWrongScore();
         };
     });
+
 };
 
 function hideWelcomeDiv() {
@@ -668,6 +669,15 @@ function incrementWrongScore() {
 
 function resultStatement() {
     let userScore = parseInt(document.getElementById("correct").innerText);
+    hideQuestionDivs();
+    let buttonSubmit = document.getElementById("submit");
+    buttonSubmit.style.display = "none";
+    let feedbackDiv = document.getElementsByClassName("feedback-div")[0];
+    feedbackDiv.style.display = "inline-block";
+    let feedback = document.getElementsByClassName("submit-feedback")[0];
+    feedback.addEventListener("click", function () {
+        alert("Thank you");
+    });
     alert(`Your score is ${userScore} /10`);
 }
 

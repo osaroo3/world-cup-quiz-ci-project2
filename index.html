@@ -39,8 +39,8 @@
                         method="POST"
                         action="https://formdump.codeinstitute.net"
                         >
-                        <label id="resize" for="user_name">Enter your username:</label>
-                        <input type="text" id="user_name" name="user_name" required /><br />
+                        <label id="resize" for="user-name">Enter your username:</label>
+                        <input type="text" id="user-name" name="user-name" required /><br />
                         <button id="start-quiz" data-type="start" type="submit">
                         Start Quiz
                         </button>
@@ -348,7 +348,7 @@
                         <label class="radio-container" for="sco">Scotland<span class="incorrect-check">
                         <i class="fa-solid fa-circle-xmark"></i></span></label>
                     </div>
-                </div>
+                </div><br>
 
                 <!--Scores area-->
                 <div class="scores-area">
@@ -357,17 +357,16 @@
                         Incorrect Answers <span id="incorrect">0</span>
                     </p>
                 </div>
-
-                <!--Feedback after submission-->
-            
                 <div class="button-div">
                     <button data-type="submit" id="submit">Submit</button>
                 </div>
+
+                <!--Feedback after submission-->
                 <div class="feedback-div">
                     <p>
-                        <label for="quiz-review"><strong>Kindly give us your feedback:</strong></label>
+                        <label id="feedback-info" for="quiz-review"><strong>Kindly give us your feedback:</strong></label>
                     </p>
-                    <textarea id="quiz-review" name="quiz-review" rows="4" cols="50">
+                    <textarea id="quiz-review" name="quiz-review" rows="6" cols="50">
                     </textarea>
                     <div class="submit-feedback"><a href="index.html">Send</a></div>
                 
