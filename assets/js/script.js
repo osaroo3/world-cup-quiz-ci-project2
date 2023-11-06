@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     let buttons = document.getElementsByTagName("button");
-    let EnterQuiz = document.getElementById("user-name");
+    let enterQuiz = document.getElementById("user-name");
     for (let button of buttons) {
         //Prevent user from accessing the quiz if username is not provided
         button.addEventListener("click", function () {
-            if (EnterQuiz.value === "") {
+            if (enterQuiz.value === "") {
                 alert("Please enter your username");
             } else if (this.getAttribute("data-type") === "submit") {
                 resultStatement();
