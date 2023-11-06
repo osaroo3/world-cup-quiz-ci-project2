@@ -20,17 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     };
-    /* document.getElementById("start-quiz").addEventListener("keydown", function (event) {
-         if (event.key === "Enter") {
-             checkAnswer();
-         }
-     });
-     document.getElementById("submit").addEventListener("keydown", function (event) {
-         if (event.key === "Enter") {
-             checkAnswer();
-         }
- 
-     });*/
+
+    document.getElementById("start-quiz").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            resultStatement();
+        }
+    });
+    document.getElementById("submit").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            resultStatement();
+        }
+
+    });
 
 });
 // This fuction takes the user to the quiz environment
@@ -660,13 +661,13 @@ function incrementCorrectScore() {
 }
 
 /**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ * Gets the current tally of incorrect answers from the DOM and increase it by 1
  */
 function incrementWrongScore() {
     let previousScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++previousScore;
 }
-
+// Retrieve result statement and display feedback box
 function resultStatement() {
     let userScore = parseInt(document.getElementById("correct").innerText);
     hideQuestionDivs();
