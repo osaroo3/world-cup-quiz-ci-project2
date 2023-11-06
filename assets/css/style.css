@@ -130,6 +130,8 @@ button[type=submit] {
 
 #quiz-review {
     font-size: 20px;
+    height: 4em;
+    width: 10em;
 }
 
 .submit-feedback>a {
@@ -168,17 +170,34 @@ button[type=submit] {
     input[type=text] {
         width: 300px;
     }
+}
 
-    /*Media query: tablets and larger (768px and up)*/
-    @media screen and (min-width:768px) {
-        body {
-            background-size: 600px 650px;
-            width: 100%;
-            display: flex;
+/*Media query: tablets and larger (768px and up)*/
+@media screen and (min-width:768px) {
+    body {
+        background-size: 600px 650px;
+        width: 100%;
+        display: flex;
 
-        }
-
-        .heading {
-            margin-top: 50px;
-        }
     }
+
+    .heading {
+        margin-top: 50px;
+        font-size: 65px;
+    }
+
+    .set,
+    #resize {
+        font-size: 30px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    #quiz-review {
+        font-size: 20px;
+        height: 4em;
+        width: 20em;
+    }
+}
