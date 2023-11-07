@@ -1,16 +1,13 @@
 // Run the quiz after the DOM has finished loading
 // Get the button elements and add event listeners to them
+let userInput;
 document.addEventListener("DOMContentLoaded", function () {
-    //Prevent default form submission
-    document.getElementById("enter-quiz").addEventListener("click", function (event) {
-        event.preventDefault();
-    });
-
     let buttons = document.getElementsByTagName("button");
     let enterQuiz = document.getElementById("user-name");
     for (let button of buttons) {
         //Prevent user from accessing the quiz if username is not provided
         button.addEventListener("click", function () {
+            userInput = document.getElementById("user-name");
             if (enterQuiz.value === "") {
                 alert("Please enter your username");
             } else if (this.getAttribute("data-type") === "submit") {
@@ -677,8 +674,9 @@ function resultStatement() {
     feedbackDiv.style.display = "inline-block";
     let feedback = document.getElementsByClassName("submit-feedback")[0];
     feedback.addEventListener("click", function () {
-        alert("Thank you");
+        alert(`Thank you ${quizPlayer}`);
     });
-    alert(`Your score is ${userScore} /10`);
+    let quizPlayer = userInput.value;
+    alert(`${quizPlayer}: Your score is ${userScore} /10`);
 }
 
