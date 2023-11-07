@@ -170,6 +170,14 @@ button[type=submit] {
     input[type=text] {
         width: 300px;
     }
+
+    .set-div {
+        padding-top: 35px;
+    }
+
+    #start-quiz {
+        margin-top: -5px;
+    }
 }
 
 /*Media query: tablets and larger (768px and up)*/
@@ -184,6 +192,14 @@ button[type=submit] {
     .heading {
         margin-top: 50px;
         font-size: 65px;
+    }
+
+    .set-div {
+        margin-top: -35px;
+    }
+
+    #start-quiz {
+        margin-top: -1px;
     }
 
     .set,

@@ -39,8 +39,11 @@
                         method="POST"
                         action="https://formdump.codeinstitute.net"
                         >
-                        <label id="resize" for="user-name">Enter your username:</label>
-                        <input type="text" id="user-name" name="user-name" required /><br />
+                        <div class="set-div">
+                            <label id="resize" for="user-name">Enter your username:</label>
+                            <input type="text" id="user-name" name="user-name" required />
+                        </div>
+                        <br />
                         <button id="start-quiz" data-type="start" type="submit">
                         Start Quiz
                         </button>
@@ -366,7 +369,7 @@
                     <p>
                         <label id="feedback-info" for="quiz-review"><strong>Kindly give us your feedback:</strong></label>
                     </p>
-                    <textarea id="quiz-review" name="quiz-review" rows="6" cols="50">
+                    <textarea id="quiz-review" name="quiz-review">
                     </textarea>
                     <div class="submit-feedback"><a href="index.html">Send</a></div>
                 
