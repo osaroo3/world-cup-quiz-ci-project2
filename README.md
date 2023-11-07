@@ -1,6 +1,6 @@
 # WORLD CUP QUIZ CI PROJECT 2
 
-The idea behind this project, is to introduce aerobics to yoga exercise, to make it even more fun to partake in. This is done by combining some aerobic exercises, and, also changing certain yoga exercises into steps of dance moves with music often playing in the background. This option is for people who want to have fun while exercising.
+The idea behind this project, was to have a quiz for football lovers to try their knowledge about the game. The questions here are from the 2022 FIFA World Cup hosted by Qatar and there are 10 questions. Ater adding your username as requested, you are taken to the quiz. For each question you get write a check mark to support your answer shows besides it and correct answer counter shows what number of answers you got write below, while "X" for wrong answer choices and incorrect counter shows likewise. At the end your total score is presented to you and you are requested to provide feedback thereafter.
 
 ![Am I Responsive Index Image](assets/readme-images/am-i-responsive-image.PNG)
 
@@ -43,6 +43,7 @@ The choice of color, background-color, font and font-family where chosen for sim
 
 - HTML5
 - CSS3
+- JavaScript
 
 ### Navigation
 
