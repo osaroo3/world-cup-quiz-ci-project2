@@ -134,6 +134,10 @@ button[type=submit] {
     width: 10em;
 }
 
+.submit-feedback {
+    margin-top: 10px;
+}
+
 .submit-feedback>a {
     text-decoration: none;
     color: white;
