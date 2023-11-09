@@ -18,6 +18,7 @@ The idea behind this project, was to have a quiz for football lovers to try thei
     - [Background photo](#background-photo)
     - [Home Page](#home-page)
       - [Quiz Section](#quiz-section)
+      - [Feedback Section](#feedback-section)
   - [Future Features](#future-features)
 - [Testing](#testing)
   - [Validator Testing](#validator-testing)
@@ -84,6 +85,12 @@ The quiz section is on the index page...just hidden, only to be revealed when th
 
 ![Quiz photo](assets/readme-images/quiz-photo.PNG)
 
+#### Feedback Section
+
+The feedback section exists to get users reaction and possible ideas to improve the quiz page.
+
+![Feedback photo](assets/readme-images/feedback-photo.PNG)
+
 ## Future Features
 
 - Make th quiz diaplay on by one, with the next page coming up once the user clicks next.
@@ -92,7 +99,7 @@ The quiz section is on the index page...just hidden, only to be revealed when th
 
 # Testing
 
-I have checked to confirm that forms cannot be submitted without valid entries.
+I have checked to confirm that the user cannot access the quiz without poviding a username.
 
 I have ensured that this project is responsive on all screens.
 
@@ -100,11 +107,15 @@ I have ensured that this project is responsive on all screens.
 
 - HTML: No errors or warnings shown when passed via the official W3C validator:
 
-![W3C HTML Validator Check](assets/readme-images/w3c-html-validation-checker.PNG)
+![W3C HTML Validator Check](assets/readme-images/html-validation-photo.PNG)
 
 - CSS: No errors or warnings shown when passed via the official (Jigsaw) validator:
 
-![W3C CSS Validator Check](assets/readme-images/w3c-css-validation-checker.PNG)
+![W3C CSS Validator Check](assets/readme-images/css-validation-photo.PNG)
+
+-js: No errors were found.
+
+![JSHint Validator Check](assets/readme-images/jshint-validation-photo.PNG)
 
 -Lighthouse audit: Archieved excellent accessiblity, best practices and SEO checks. However, the site performance is at 52%. This issue as stated has to do with my chrome extension.
 
@@ -112,14 +123,13 @@ I have ensured that this project is responsive on all screens.
 
 ## Unfixed Bugs
 
-- Yet to center the cover text both verically and horizontally.
 - Yet to fix my chrome extension issues affecting the site's performance rating.
 
 ## Libraries and Programs Used
 
 - Github: To Store Repository
-  Codeanywhere: To Create the html and css files
-- Google Fonts: Font-family 'Montserrat' and 'Open Sans'
+- Codeanywhere: To Create the html and css files
+- Google Fonts: Font-family 'Open Sans' and fallback "sans serif"
 - Google Chrome Dev Tools: For testing.
 - Microsoft Edge: Alternative browser for site testing
 - Font Awesome: Social media icons
@@ -134,25 +144,26 @@ The site was deployed to GitHub pages. The steps or deploy are shwon below:
   3. Select 'Main' from drop-down menu under branch, and click save.
   4. A link to the live page will appear .
 
-The live link for this site can be found here -[link](https://osaroo3.github.io/Aerobic_Yoga_CI_Project1/index.html)
+The live link for this site can be found here -[link](https://osaroo3.github.io/world-cup-quiz-ci-project2/index.html)
 
 # Credits
 
-The journey to becoming a Fullstack software developer has been great so far, and, also challenging. I wish to thank my mentor Martina Terlevic for all the support so far, and to Code Institute slack community, I say a big thanks.
+I wish to thank my mentor Martina Terlevic for all the support so far, and to Code Institute and its slack community, I say a big thanks.
 
-1. The framework of this page follows that of Code Institutes Love Running walkthrough project.
-2. I acknowledge Tulkerfaulk for the readme file structure.
-3. The coders coffee project came in handy too.
-4. dh dance school location was used in this website for educative purposes.
+1. The tools to make this page come alive comes from Code Institutes Love maths and love running walkthrough project.
+2. I acknowledge Code Institute's sample README and Tulkerfaulk for the readme file structure.
+3. The correct and incorrect scores counter code was gotten from love maths.
 
 ## Content
 
-The text content of the index page was sourced from : [Link](https://www.webmd.com/fitness-exercise/what-are-aerobic-exercises#:~:text=Aerobic%20exercise%20is%20cardiovascular%20exercise,that%20gets%20to%20your%20muscles.)
+The quiz content was sourced from : [FIFA](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/scores-fixtures?country=GB&wtw-filter=ALL)
 
 ## Media
 
 Images:
 
-All images were sourced from : [pexels](https://www.pexels.com/)
+The FIFA trophy image was sourced from : [Google search](https://www.aljazeera.com/sports/2023/3/14/fifa-confirms-expanded-2026-world-cup-with-record-104-matches)
 
-All faveicons were sourced from : [Flaticon](https://www.flaticon.com/free-icons/yoga/)
+The offial 2022 world cup image was sourced from : [Google search](https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/2022_FIFA_World_Cup.svg/800px-2022_FIFA_World_Cup.svg.png)
+
+The faveicon was sourced from : [Flaticon](https://www.flaticon.com/free-icon/world-cup_8861317?term=world+cup&page=1&position=2&origin=search&related_id=8861317)
