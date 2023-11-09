@@ -1,6 +1,6 @@
 # World Cup Quiz CI Project 2
 
-The idea behind this project, was to have a quiz for football lovers to try their knowledge about the game. The questions here are from the 2022 FIFA World Cup hosted by Qatar and there are 10 questions. After adding your username as requested, you are taken to the quiz. For each question you get write a check mark to support your answer shows besides it and correct answer counter shows what number of answers you got write below, while "X" for wrong answer choices and incorrect counter shows likewise. At the end, your total score is presented to you, and you are requested to provide feedback thereafter.
+The idea behind this project, was to have a quiz for football lovers to try their knowledge about the game. The questions here are from the 2022 FIFA World Cup hosted by Qatar and there are 10 questions. After adding your username as requested, you are taken to the quiz. For each question you get right a check mark to support your answer shows besides it and correct answer counter shows what number of answers you got right below, while "X" for wrong answer choices and incorrect counter shows likewise. At the end, your total score is presented to you, and you are requested to provide feedback thereafter.
 
 ![Am I Responsive Index Image](assets/readme-images/am-i-responsive-image.PNG)
 
@@ -134,7 +134,7 @@ I have ensured that this project is responsive on all screens.
 
 ![W3C HTML Validator Check](assets/readme-images/html-validation-photo.PNG)
 
-- CSS: No errors or warnings shown when passed via the official (Jigsaw) validator:
+- CSS: No errors shown when passed via the official (Jigsaw) validator:
 
 ![W3C CSS Validator Check](assets/readme-images/css-validation-photo.PNG)
 
@@ -179,7 +179,7 @@ The live link for this site can be found here -[link](https://osaroo3.github.io/
 
 I wish to thank my mentor Martina Terlevic for all the support so far, and to Code Institute and its slack community, I say a big thanks.
 
-1. The tools to make this page come alive comes from Code Institutes Love maths and love running walkthrough project.
+1. The tools to make this page come alive comes from Code Institutes Love maths, love running walkthrough project and Aerobic yoga project 1.
 2. I acknowledge Code Institute's sample README and Tulkerfaulk for the readme file structure.
 3. The correct and incorrect scores counter code was gotten from love maths.
 
