@@ -21,6 +21,7 @@ The idea behind this project, was to have a quiz for football lovers to try thei
       - [Feedback Section](#feedback-section)
   - [Future Features](#future-features)
 - [Testing](#testing)
+  - [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-ux-section)
   - [Validator Testing](#validator-testing)
   - [Unfixed Bugs](#unfixed-bugs)
   - [Libraries and Programs Used](#libraries-and-programs-used)
@@ -103,6 +104,30 @@ I have checked to confirm that the user cannot access the quiz without poviding 
 
 I have ensured that this project is responsive on all screens.
 
+
+## Testing User Stories from User Experience (UX) Section
+
+- First Time Visitor Goals
+  - As a first time visitor, I want to know the purpose of this site.
+      1. Every first time visitor can clearly see that this is a FIFA world cup quiz site.
+      2. The site is there to test there sports knowledge about football.
+  - As a first time visitor, I want navigate the site intuitively.
+      1. Navigating the site is very intuitive, as how to navigate the site is easy and, the needed response from users are clear and unambiguous.
+  - As a first time visitor, I want to look for testimonials to know what others think.
+      1. At the moment testimonies of users are not public yet. That is currently under consideration.
+
+- Returning Visitor Goals
+  
+  - As a returning visitor, I want to see what changes/ improvements have been made to the site.
+      1. Further changes are currently under consideration, however, there is no specific time for their implementation.
+
+- Frequent User Goals
+
+  - As a frequent user, I want to see if new quiz questions have been added.
+      1. No new changes to the site yet.
+  - As a frequent user, I want to see if the comments of users impact changes on the site.
+      1. It certainly will. However, implementation is yet to take place. 
+
 ## Validator Testing
 
 - HTML: No errors or warnings shown when passed via the official W3C validator:
@@ -117,9 +142,9 @@ I have ensured that this project is responsive on all screens.
 
 ![JSHint Validator Check](assets/readme-images/jshint-validation-photo.PNG)
 
--Lighthouse audit: Archieved excellent accessiblity, best practices and SEO checks. However, the site performance is at 52%. This issue as stated has to do with my chrome extension.
+-Lighthouse audit: Archieved 100% accessiblity, best practices and SEO checks. However, the site performance is at 74% - the lowest. This issue has to do with my chrome extension.
 
-![Lighthouse Accessibility Audit](assets/readme-images/lighthouse.PNG)
+![Lighthouse Accessibility Audit](assets/readme-images/lighthouse-report-photo.PNG)
 
 ## Unfixed Bugs
 
