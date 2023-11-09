@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-/* --------- Global style */
+/*  Global style */
 body {
     background: url("../images/fifa-world-cup.svg.png") no-repeat center center/cover;
     background-size: 900px 700px;
@@ -21,7 +21,7 @@ body {
     flex: 1 0 auto;
 }
 
-/* --------- Heading */
+/* Heading */
 .heading {
     text-align: center;
     font-size: 3rem;
@@ -164,7 +164,7 @@ button[type=submit] {
 
 }
 
-/*Media query:Large and lanscape phone(576px and up)*/
+/*Media query:Large and landscape phone(576px and up)*/
 @media screen and (min-width:576px) {
     body {
         background-size: 400px 360px;

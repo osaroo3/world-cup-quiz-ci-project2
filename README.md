@@ -1,6 +1,6 @@
 # World Cup Quiz CI Project 2
 
-The idea behind this project, was to have a quiz for football lovers to try their knowledge about the game. The questions here are from the 2022 FIFA World Cup hosted by Qatar and there are 10 questions. Ater adding your username as requested, you are taken to the quiz. For each question you get write a check mark to support your answer shows besides it and correct answer counter shows what number of answers you got write below, while "X" for wrong answer choices and incorrect counter shows likewise. At the end your total score is presented to you and you are requested to provide feedback thereafter.
+The idea behind this project, was to have a quiz for football lovers to try their knowledge about the game. The questions here are from the 2022 FIFA World Cup hosted by Qatar and there are 10 questions. After adding your username as requested, you are taken to the quiz. For each question you get write a check mark to support your answer shows besides it and correct answer counter shows what number of answers you got write below, while "X" for wrong answer choices and incorrect counter shows likewise. At the end, your total score is presented to you, and you are requested to provide feedback thereafter.
 
 ![Am I Responsive Index Image](assets/readme-images/am-i-responsive-image.PNG)
 
@@ -23,6 +23,7 @@ The idea behind this project, was to have a quiz for football lovers to try thei
 - [Testing](#testing)
   - [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-ux-section)
   - [Validator Testing](#validator-testing)
+  - [Fixed Bug](#fixed-bug)
   - [Unfixed Bugs](#unfixed-bugs)
   - [Libraries and Programs Used](#libraries-and-programs-used)
 - [Deployment](#deployment)
@@ -70,7 +71,7 @@ There is one navigation included in this site. It is linked to the send button-l
 
 ### Background photo
 
-A main photo is used in the index page as to capture the users attention, expecially as it is the official logo of the 2022 FIFA world cup held in Qatar.
+A main photo is used in the index page to capture the users attention, expecially as it is the official logo of the 2022 FIFA world cup held in Qatar.
 
 ![Background photo](assets/images/fifa-world-cup.svg.png)
 
@@ -94,23 +95,22 @@ The feedback section exists to get users reaction and possible ideas to improve 
 
 ## Future Features
 
-- Make th quiz diaplay on by one, with the next page coming up once the user clicks next.
-- include quiz from othe world cup years.
-- Add testimonies of people, who take the quiz.
+- Make th quiz display one by one, with the next page coming up once the user clicks next.
+- Add more questions and include quiz from othe world cup years.
+- Add testimonies of users who take the quiz.
 
 # Testing
 
-I have checked to confirm that the user cannot access the quiz without poviding a username.
+I have checked to confirm that the user cannot access the quiz without providing a username.
 
 I have ensured that this project is responsive on all screens.
-
 
 ## Testing User Stories from User Experience (UX) Section
 
 - First Time Visitor Goals
   - As a first time visitor, I want to know the purpose of this site.
       1. Every first time visitor can clearly see that this is a FIFA world cup quiz site.
-      2. The site is there to test there sports knowledge about football.
+      2. The site is there to test their sports knowledge about football.
   - As a first time visitor, I want navigate the site intuitively.
       1. Navigating the site is very intuitive, as how to navigate the site is easy and, the needed response from users are clear and unambiguous.
   - As a first time visitor, I want to look for testimonials to know what others think.
@@ -126,7 +126,7 @@ I have ensured that this project is responsive on all screens.
   - As a frequent user, I want to see if new quiz questions have been added.
       1. No new changes to the site yet.
   - As a frequent user, I want to see if the comments of users impact changes on the site.
-      1. It certainly will. However, implementation is yet to take place. 
+      1. It certainly will. However, implementation is yet to take place.
 
 ## Validator Testing
 
@@ -145,6 +145,10 @@ I have ensured that this project is responsive on all screens.
 -Lighthouse audit: Archieved 100% accessiblity, best practices and SEO checks. However, the site performance is at 74% - the lowest. This issue has to do with my chrome extension.
 
 ![Lighthouse Accessibility Audit](assets/readme-images/lighthouse-report-photo.PNG)
+
+## Fixed Bug
+
+- I was'nt able to call the user's name entry before telling them their quiz score. This issue was based on the variable assigned to the name entry being block scoped. I fixed this issue by declaring the variable outside the scope making it a global varaiable.
 
 ## Unfixed Bugs
 

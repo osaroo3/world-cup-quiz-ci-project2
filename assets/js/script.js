@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-// This fuction takes the user to the quiz environment
+// This function takes the user to the quiz environment
 function runQuiz() {
     hideWelcomeDiv();
 
